@@ -9,17 +9,14 @@ import { BrowserRouter, Route,Routes} from "react-router-dom";
 export default function App() {
 
     return(
-        <>        
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/login">Login</a>
+        <> 
             <BrowserRouter>
-                    <Nav/>
-                    <Routes>
-                        <Route path="/" element={<Home/>}/>
-                        <Route path="/about" element={<About/>}/>
-                        <Route path="/login" element={<Login/>}/>
-                    </Routes>
+                <Nav/>
+                 <Routes>
+                     <Route path="/" element={<Home/>}/>
+                     <Route path="/about" element={<About/>}/>
+                     <Route path="/login" element={<Login/>}/>
+                </Routes>
             </BrowserRouter>
         </>
     )
